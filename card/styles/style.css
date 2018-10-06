@@ -1,0 +1,197 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: #e1e7ed;
+	color: #868d9b;
+	margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	width: 750px;
+	clear: both;
+}
+
+.container {
+	max-width: 750px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.sale-design {
+	margin-top: 8%;
+	position: relative;
+}
+
+.sale-edsign__img {
+	width: 100%;
+	min-width: 600px;
+}
+
+.triangle-cover {
+	border-top: 80px solid #ff638f;
+	border-right: 80px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+
+.triangle-cover:before {
+    content: "";
+    background: url(../images/star.png) no-repeat 50%;
+    background-size: 16px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -71px;
+    left: 9px;
+}   /*С z-index'ом не нашел решения - звезда не хотела дружить с треугольником.*/
+    /*Покажите пожалуйста как можно было сделать?*/         
+
+.round-sticker {
+    background: #ff638f center no-repeat;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 8.5%;
+    right: 4.3%;
+}
+
+.round-sticker:hover {
+	background: #65bd8c;
+}
+
+.sticker-text {
+	color: #fff;
+    font-size: 23.4px;
+    font-weight: 800;
+    margin: 25px 0;
+    text-align: center;
+    line-height: 31px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.to-left-side {
+	float: left;
+}
+
+.to-right-side {
+	float: right;
+}
+
+.sale-info {
+	background: #fff;
+	padding-top: 1px;
+}
+
+.sale-info__head {
+	margin: 11px 29px 0;
+}
+
+.sale-info__head__title {
+    font-size: 19.5px;
+    color: #33363b;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+
+.sale-info__head__cost {
+    font-size: 19px;
+    color: #65bd8c;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.sale-info__middle-text {
+    margin: 0px 31px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.sale-info__client-counter {
+	margin: 28px 2px 17px 25px;
+	line-height: 0;
+}
+
+.client-counter__description {
+    font-size: 13.4px;
+    display: inline-block;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    margin: 38px 5px;
+}
+
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+.first-avatar {
+	background: url(../images/avatar_1.png) center no-repeat;
+}
+
+.second-avatar {
+	background: url(../images/avatar_2.png) center no-repeat;
+}
+
+.third-avatar {
+	background: url(../images/avatar_3.png) center no-repeat;
+}
+
+.client-quantity {
+	color: #868d9b; 
+	font-size: 12.5px;
+    border: solid 1px;
+    width: 58px;
+    border-radius: 40px;
+    margin: 0px 3px;
+    height: 30px;
+    text-align: center;
+    vertical-align: -7px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+}  
+
+.client-quantity:hover {
+	background: #868d9b;
+	color: #fff;
+}  
+
+.link {
+    vertical-align: 5px;
+}
+
+.btn {
+    background: #ff638f;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    text-transform: uppercase;
+    margin: 24px 30px;
+}
+
+.btn:hover {
+	background: #65bd8c;
+}
+
+.btn-text {
+	text-decoration: none;	
+	text-align: center;
+    color: #fff;	
+    padding: 0px 19px;
+    font-size: 14.1px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+}
+
+.sale-info__footer {
+	padding-bottom: 6px;
+}
