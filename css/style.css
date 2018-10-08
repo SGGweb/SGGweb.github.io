@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .work-grid {
   background-size: cover;
-  background-position: center center;
+  background-position: top left;
   background-repeat: no-repeat;
   position: relative;
   height: 300px;
