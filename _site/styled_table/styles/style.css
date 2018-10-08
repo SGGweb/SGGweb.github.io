@@ -1,0 +1,160 @@
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	color: #2f4455;
+}
+
+table {
+	width: 100%; 
+	border-spacing: 0;
+	min-width: 500px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+.container {
+	max-width: 790px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.place-col {
+	width: 34.6%;
+}
+
+.address-col {
+	width: 29.8%;
+}
+
+.title {
+	color: #003663;
+	font-size: 20px;
+	font-weight: normal;
+	padding-left: 24px;
+	padding-top: 20px;
+	margin-top: 0	
+}
+
+.table-description {
+	color: #7f7f7f;
+	font-size: 13px;
+	padding: 4px 23px 8px;	
+}
+
+.table {
+	border-collapse: separate;
+	padding: 0 15px 0 25px;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.table a {
+	display: block;
+}
+
+.star-rating {
+	width: 8.7%;
+	min-width: 115px;
+}
+
+.star-rating-sprite {
+	background: url(../images/star-icon.png) left top repeat-x;
+	height: 21px;
+	max-width: 85px;
+}
+
+.table td {
+	text-align: left;
+	padding: 11px 0 10px 20px;
+	box-sizing: border-box;
+	border: 1px solid transparent;                      /*Невидимый бордер для ховер эфекта*/ 
+}
+
+.table th {
+	padding: 0;
+}
+
+.table td:first-child {
+	font-size: 14px;
+}
+
+.table td:last-child {
+	color: #0c99c8;
+	padding-left: 18px;
+}
+
+.table tr:nth-child(even) td {
+	background: #f4fbfd;
+	border-top: 1px solid #d7e7ec;
+	border-bottom: 1px solid #d7e7ec;                   /*Верхний и нижний бордер у нечетных строк*/   
+}
+
+.table tr:nth-child(even) td:first-child {
+	border-left: 1px solid #d7e7ec;
+	border-radius: 3px 0 0 3px;                         /*Левый бордер и радиус строки*/                   
+}
+
+.table tr:nth-child(even) td:last-child {
+	border-right: 1px solid #d7e7ec;
+	border-radius: 0 3px 3px 0;                         /*Правый бордер и радиус строки*/  
+}
+
+/*----------------------------------------------------Ховеры--------------------------------------------------------------*/
+
+.table:hover tr td {
+	background: transparent;			                /*Отмена бордера у таблицы для ховер эфекта*/  
+}
+
+.table:hover tr:nth-child(even) td {
+	border-color: transparent;                          /*Отмена бордера у нечетных строк*/
+}
+
+.table:hover tr:nth-child(even) td:first-child {          
+	border-color: transparent;                          /*Отмена левого бордера у нечетной строки для ховер эфекта*/
+}
+
+.table:hover tr:nth-child(even) td:last-child {
+	border-color: transparent;                          /*Отмена правого бордера у нечетной строки для ховер эфекта*/
+}
+
+.table tr:hover {
+	background: #e5f9ff;
+	transition: background-color 0.5s ease-out;         /*Изменение бэкграунда у строки по ховеру*/		  
+}
+
+.table tr:nth-child(n):hover td {
+	border-top: 1px solid #d7e7ec !important;
+	border-bottom: 1px solid #d7e7ec !important;        /*Верхний и нижний бордер у строки по ховеру*/  
+}
+
+
+.table tr:nth-child(n):hover td:first-child {
+	border-left: 1px solid #d7e7ec;                     /*Левый бордер и радиус строки по ховеру*/ 
+	border-radius: 3px 0 0 3px;
+}
+
+.table tr:nth-child(n):hover td:last-child {
+	border-right: 1px solid #d7e7ec;                    /*Правый бордер и радиус строки по ховеру*/
+	border-radius: 0 3px 3px 0;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 500px) {
+	.table-wrap {
+		overflow-x: scroll;
+	}
+}
